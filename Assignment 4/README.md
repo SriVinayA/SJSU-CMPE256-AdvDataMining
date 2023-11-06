@@ -1,33 +1,51 @@
-## Starbucks Hot Beverages Sales Analysis
+# CMPE 256 Class Presentation - VAR Commodity Pricing Model - Gold & Silver
 
-### Objective
-A newly opened Starbucks coffee shop manager aims to increase customer loyalty. To achieve this, the manager collected data on the sale of hot beverages at popular times on a typical Wednesday, with the goal of offering sales coupons based on visit times.
+## Overview
+This repository contains a Jupyter notebook showcasing the application of Vector Auto Regressive (VAR) Model in forecasting commodity prices, specifically Gold and Silver. The study is based on the topics covered in the book "Machine Learning and Artificial Intelligence for Agricultural Economics: Prognostic Data Analytics to Serve Small-Scale Farmers Worldwide".
 
-### Dataset Description
-- **PTIndex:** Popular Times Index, ranging from 1 (6am-7am) to 11 (8pm-9pm).
-- **HBIndex:** Hot Beverages index, ranging from 1 (Coffee type 1) to 9 (Coffee Of the Day).
+## Features
+- Granger’s Causality Test to test the relationships of multiple variables in the time series.
+- Vector Auto Regressive Model (VAR) for forecasting future commodity prices.
 
-### Analysis Steps
+## Data Sources
+- Gold prices, Silver prices, Crude Oil prices, Stock index, Interest Rate, and USD rate historical data.
+- [LBMA Precious Metal Prices](https://www.lbma.org.uk/prices-and-data/precious-metal-prices)
+- [Federal Reserve Economic Data - Interest Rates](https://fred.stlouisfed.org/series/FEDFUNDS)
 
-1. **Data Exploration & Cleaning:** Loaded the dataset and structured it to isolate the relevant sales data.
-2. **Data Aggregation:** Aggregated the sales data by the "PTIndex" to determine the total sales for each time slot.
-3. **Data Visualization:** Visualized the sales distribution across time slots, identifying PTIndex 3 as notably popular.
-4. **Hierarchical Clustering:** Applied hierarchical clustering using three different linkage methods:
-   - Single Linkage
-   - Complete Linkage
-   - Average Linkage
+## Notebooks
+- `Adv_dm_VARSilverGoldCommodityPricingPredict.ipynb`: Main notebook with all analyses and forecasting.
 
-### Key Insights
+## Getting Started
+To run the notebook:
+1. Clone this repository.
+2. Ensure that you have Jupyter Notebook or JupyterLab installed.
+3. Navigate to the notebook and open it with Jupyter.
+4. Run the cells in sequence to see the analysis and forecasting.
 
-- **PTIndex 3 (Late Morning):** Identified as the most popular time based on sales data.
-- **Beverage Preferences:** "Café Americano" and "Café Mocha" were notably popular during the most popular time slots.
-- **Clustering Results:**
-  - **Single Linkage:** Produced two clusters, recognizing PTIndex 3 as distinctively popular.
-  - **Complete Linkage:** Divided the time slots into three clusters, offering a more granular view.
-  - **Average Linkage:** Provided even more granularity with four clusters, still highlighting PTIndex 3's distinct popularity.
+## Dependencies
+- Python 3
+- Jupyter Notebook
+- Required Python libraries:
+  - pandas
+  - numpy
+  - matplotlib
+  - statsmodels
 
-### Recommendations
+## How to Contribute
+1. Fork the project.
+2. Create a new branch (`git checkout -b new-feature`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add some feature'`).
+5. Push to the branch (`git push origin new-feature`).
+6. Create a new Pull Request.
 
-1. Offer coupons during the late morning rush to capitalize on the peak crowd.
-2. Promote popular beverages like "Café Americano" and "Café Mocha" alongside the coupon offers.
-3. Consider gathering more extensive data for more robust insights and tailor promotions based on specific days and customer preferences.
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## Contact
+For any queries, you can reach out to the repository owner.
+
+## Acknowledgments
+- Special thanks to the authors of the book that inspired this study.
+- Gratitude to the data providers for making the information publicly available.
+
