@@ -32,19 +32,3 @@ The Vector Space Model created in this project can be used for:
 
 ## Tools and Languages
 - Python
-- Libraries: [List any specific libraries or tools used]
-
-## Installation and Running the Project
-Provide steps for installation and how to run the project.
-
-## Contributing
-Guidelines on how others can contribute to the project.
-
-## License
-Specify the license under which this project is released.
-
-## Contact
-Your contact information for users who have questions or want to get in touch.
-
----
-**Note:** This README is a brief overview of the Wedding Gown VSM Project. For detailed information, please refer to the specific files and documentation in this repository.
